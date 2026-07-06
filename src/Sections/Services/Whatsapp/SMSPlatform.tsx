@@ -79,7 +79,7 @@ const SMSPlatform: React.FC = () => {
   }, []);
 
   return (
-    <div className="px-6 md:px-40 py-16 md:py-16">
+    <div className="px-6 sm:px-10 lg:px-40 py-16 md:py-16">
       {/* Header */}
       <div className="mx-auto text-center mb-12">
         <h1 className="text-xl md:text-4xl font-medium heading-two">SMS Platform</h1>

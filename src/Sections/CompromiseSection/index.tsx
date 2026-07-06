@@ -180,7 +180,7 @@ const CompromiseSection: React.FC = () => {
   return (
     <section ref={sectionRef} className="relative overflow-hidden bg-white">
 
-      <div className="mx-auto px-4 sm:px-6 md:px-40 py-16">
+      <div className="mx-auto px-4 sm:px-6 md:px-20 lg:px-40 py-16">
 
         {/* Header */}
 

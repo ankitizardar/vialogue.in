@@ -48,7 +48,7 @@ const WhoShouldUse: React.FC<Props> = ({
 
   return (
     <section ref={sectionRef} className={`"w-full py-14 md:py-20 bg-white" ${bgColor}`}>
-      <div className="mx-auto px-4 md:px-40">
+      <div className="mx-auto px-4 sm:px-10 lg:px-40">
         {/* Heading */}
         <h2 className="text-center text-2xl md:text-4xl font-medium heading-two text-gray-900 mb-12 md:mb-16">
           {heading}

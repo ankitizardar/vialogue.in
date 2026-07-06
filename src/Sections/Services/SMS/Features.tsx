@@ -41,7 +41,7 @@ const Features: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ amount: 0.25, once: true }}
       transition={{ duration: 0.6 }}
-      className="px-5 md:px-40 py-12 md:py-16 bg-gray-100"
+      className="px-5 sm:px-10 lg:px-40 py-12 md:py-16 bg-gray-100"
     >
       <motion.h1
             initial={{ opacity: 0, y: 25 }}

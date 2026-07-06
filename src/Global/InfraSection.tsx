@@ -30,7 +30,7 @@ const ApiInfraSection: React.FC<{ data: ApiInfraData }> = ({ data }) => {
         </h2>
 
         {/* MAIN GRID */}
-        <div className="grid py-16 px-4 md:px-40  grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div className="grid py-16 px-4 sm:px-10 lg:px-40 grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           
           {/* LEFT IMAGE */}
           <div className="flex justify-center">

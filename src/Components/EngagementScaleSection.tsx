@@ -51,7 +51,7 @@ const EngagementScaleSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="px-4 sm:px-6 md:px-40 py-14 sm:py-18 lg:py-16 bg-gray-100"
+      className="px-4 sm:px-6 md:px-20 lg:px-40 py-14 sm:py-18 lg:py-16 bg-gray-100"
     >
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-10">

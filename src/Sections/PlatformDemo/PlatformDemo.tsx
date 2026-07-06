@@ -287,11 +287,11 @@ export default function PlatformDemo() {
                       </div>
 
                       {/* Compact Channel Indicators flex pill */}
-                      <div className="flex justify-between items-center text-[9px] text-slate-500 bg-slate-50 border border-slate-200/60 rounded-xl px-3 py-2 font-mono select-none">
+                      <div className="flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-0 text-[9px] text-slate-500 bg-slate-50 border border-slate-200/60 rounded-xl px-3 py-2 font-mono select-none">
                         <span>WhatsApp: <strong className="text-[#075E54]">34,180 (70.9%)</strong></span>
-                        <span className="text-slate-350">|</span>
+                        <span className="hidden sm:inline text-slate-350">|</span>
                         <span>SMS: <strong className="text-blue-700">12,084 (25.1%)</strong></span>
-                        <span className="text-slate-350">|</span>
+                        <span className="hidden sm:inline text-slate-350">|</span>
                         <span>RCS: <strong className="text-purple-700">1,940 (4.0%)</strong></span>
                       </div>
                     </div>

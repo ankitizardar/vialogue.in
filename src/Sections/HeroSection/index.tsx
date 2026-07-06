@@ -92,7 +92,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
       ref={heroRef}
-      className="min-h-fit sm:text-left text-center w-full pt-10 pb-16 sm:pt-16 px-4 sm:px-40"
+      className="min-h-fit sm:text-left text-center w-full pt-10 pb-16 sm:pt-16 px-4 sm:px-10 lg:px-40"
     >
       <div className="flex flex-col lg:flex-row gap-0 sm:gap-0 lg:gap-0 items-center">
         {/* LEFT */}

@@ -33,7 +33,7 @@ const card = {
 
 const KeyFeatures: React.FC<Props> = ({ title, data }) => {
   return (
-    <section className="py-16 px-2 md:px-40 bg-white text-left">
+    <section className="py-16 px-4 sm:px-10 lg:px-40 bg-white text-left">
       <div className="mx-auto">
 
         {/* Heading */}

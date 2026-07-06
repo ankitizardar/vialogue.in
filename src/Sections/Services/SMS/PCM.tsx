@@ -213,7 +213,7 @@ const PCM: React.FC = () => {
   return (
     <div
       ref={sectionRef}
-      className={`px-4 md:px-40 py-16 bg-[#F9F9FA] transition-all duration-700 ${
+      className={`px-4 sm:px-10 lg:px-40 py-16 bg-[#F9F9FA] transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >

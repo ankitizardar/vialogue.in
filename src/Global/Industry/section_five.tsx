@@ -26,7 +26,7 @@ export default function FoodBeveragesSection() {
   };
 
   return (
-    <section className="w-full bg-[#FDF7FF] py-14 sm:py-16 md:py-20 px-4 sm:px-20 md:px-40 overflow-hidden">
+    <section className="w-full bg-[#FDF7FF] py-14 sm:py-16 md:py-20 px-4 sm:px-10 md:px-20 lg:px-40 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}

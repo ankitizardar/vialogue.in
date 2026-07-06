@@ -20,7 +20,7 @@ const VerifiedBusinessMessaging = ({ data }: VerifiedBusinessMessagingProps) => 
   }, [data.length]);
 
   return (
-    <section className="w-full bg-[#f4f4f6] py-16 px-4 md:px-40 overflow-hidden">
+    <section className="w-full bg-[#f4f4f6] py-16 px-4 sm:px-10 lg:px-40 overflow-hidden">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT SIDE */}

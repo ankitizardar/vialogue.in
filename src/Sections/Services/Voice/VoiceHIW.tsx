@@ -54,7 +54,7 @@ const item = {
 
 const VoiceHIW: React.FC = () => {
   return (
-    <div className="px-6 md:px-40 py-16">
+    <div className="px-6 sm:px-10 lg:px-40 py-16">
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

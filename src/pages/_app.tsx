@@ -49,6 +49,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={manrope.className}>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       {loading && <PageLoader fout={loading} />}

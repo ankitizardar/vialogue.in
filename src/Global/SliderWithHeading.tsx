@@ -40,7 +40,7 @@ const SlidingWithHeading: React.FC<{ capabilities: PlatformCapability[] }> = ({
   return (
     <div
       ref={ref}
-      className={`px-6 md:px-40 py-16 bg-[#FFF3F3] transition-all duration-700 ${
+      className={`px-6 sm:px-10 lg:px-40 py-16 bg-[#FFF3F3] transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >

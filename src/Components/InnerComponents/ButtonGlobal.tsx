@@ -15,7 +15,7 @@ const ButtonGlobal: React.FC<ButtonGlobalProps> = ({
 }) => {
   if (property) {
     return (
-      <Link href="/contact">
+      <Link href="/contact" className="w-full sm:w-auto sm:flex-1 flex">
       <button
         onClick={onClick}
         className="
@@ -29,8 +29,7 @@ const ButtonGlobal: React.FC<ButtonGlobalProps> = ({
           hover:-translate-y-0.5
           hover:shadow-lg hover:shadow-purple-500/20
           active:scale-[0.97]
-          sm:flex-1
-          w-full flex-1 sm:w-auto cursor-pointer
+          w-full cursor-pointer
         "
       >
         {/* SLIDING COLOR LAYER */}
@@ -61,7 +60,7 @@ const ButtonGlobal: React.FC<ButtonGlobalProps> = ({
 
   /* SECONDARY BUTTON */
   return (
-    <Link href="/contact">
+    <Link href="/contact" className="w-full sm:w-auto sm:flex-1 flex">
     <button
       onClick={onClick}
       className="
@@ -74,8 +73,7 @@ const ButtonGlobal: React.FC<ButtonGlobalProps> = ({
         transition-all duration-300 ease-out
         hover:-translate-y-0.5 hover:shadow-lg hover:bg-slate-100 hover:border-slate-300
         active:scale-[0.97]
-        sm:flex-1
-        w-full flex-1 sm:w-auto cursor-pointer
+        w-full cursor-pointer
       "
     >
       <span className="relative z-10 transition-colors duration-300">

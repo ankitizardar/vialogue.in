@@ -107,7 +107,7 @@ const API: React.FC = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="px-6 md:px-40 py-24 bg-[#fafbfd]">
+    <div ref={sectionRef} className="px-6 sm:px-10 lg:px-40 py-24 bg-[#fafbfd]">
       
       {/* Top Heading */}
       <div className="text-center mb-20 max-w-4xl mx-auto">

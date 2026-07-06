@@ -24,7 +24,7 @@ const ProductImageStatic = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center mt-[-140px] md:mt-[-200px] py-16 mx-[calc(4.5vw)] max-w-[calc(90vw)] sm:max-w-[calc(100%)] sm:mx-[calc(0)] md:py-20 px-4 md:px-40">
+    <section className="w-full flex justify-center mt-[-140px] md:mt-[-200px] py-16 mx-[calc(4.5vw)] max-w-[calc(90vw)] sm:max-w-[calc(100%)] sm:mx-[calc(0)] md:py-20 px-4 sm:px-10 lg:px-40">
       <div
         ref={imgRef}
         className="max-w-[100vw] w-full shadow-xl rounded-lg overflow-hidden"

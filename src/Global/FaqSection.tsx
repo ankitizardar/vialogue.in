@@ -51,7 +51,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="py-16 px-4 sm:px-40 bg-white"
+      className="py-16 px-4 sm:px-10 lg:px-40 bg-white"
     >
       {/* HEADING */}
       <div className="text-center mb-14">

@@ -27,7 +27,7 @@ export default function FeaturesBento() {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[220px] sm:auto-rows-[240px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto md:auto-rows-[240px]">
           
           {/* Card 1: Multi-channel Messaging (Span 2 Cols) */}
           <motion.div

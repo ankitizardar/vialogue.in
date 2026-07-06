@@ -100,7 +100,7 @@ const smsFeatures = [
 const SMSPlatformSection: React.FC = () => {
   return (
     <MotionConfig reducedMotion="never">
-      <section className="px-4 sm:px-6 md:px-40 py-16 bg-gray-100">
+      <section className="px-4 sm:px-6 md:px-20 lg:px-40 py-16 bg-gray-100">
         <motion.div
           className="max-w-7xl mx-auto"
           variants={container}

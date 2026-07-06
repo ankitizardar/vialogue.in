@@ -66,7 +66,7 @@ const ShowSection: React.FC = () => {
   const router = useRouter();
   return (
     <MotionConfig reducedMotion="never">
-      <section className="px-4 mt-0 sm:mt-0 bg-gray-100 sm:bg-gray-50 sm:px-6 md:px-40 py-16 sm:py-16">
+      <section className="px-4 mt-0 sm:mt-0 bg-gray-100 sm:bg-gray-50 sm:px-6 md:px-20 lg:px-40 py-16 sm:py-16">
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}

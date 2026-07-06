@@ -20,7 +20,7 @@ const Industries: React.FC<Props> = ({
 }) => {
   return (
     <section className={`"w-full  py-16 sm:py-16" ${bgColor}`}>
-      <div className="mx-auto px-4 md:px-40">
+      <div className="mx-auto px-4 sm:px-10 lg:px-40">
         {/* Heading */}
         <h2 className="text-center text-2xl heading-two md:text-4xl font-medium text-gray-800 mb-14">
           {heading}

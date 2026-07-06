@@ -37,7 +37,7 @@ const card = {
 
 const FeatureCards: React.FC<Props> = ({ title, data }) => {
   return (
-    <section className="w-full text-left bg-white py-16 px-2 md:px-40 overflow-hidden">
+    <section className="w-full text-left bg-white py-16 px-4 sm:px-10 lg:px-40 overflow-hidden">
       <div className="mx-auto">
 
         {/* TITLE */}

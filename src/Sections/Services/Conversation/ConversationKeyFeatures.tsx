@@ -58,7 +58,7 @@ const ConversationKeyFeatures: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-24 px-6 md:px-40 bg-white text-left relative z-10 select-none">
+    <section className="py-24 px-6 sm:px-10 lg:px-40 bg-white text-left relative z-10 select-none">
       <div className="container mx-auto max-w-7xl">
         
         {/* Title Block */}

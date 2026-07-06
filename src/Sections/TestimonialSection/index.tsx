@@ -163,7 +163,7 @@ const TestimonialSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-0 px-0 sm:px-40 sm:py-0 sm:pt-16 py-16 sm:pb-16 bg-gray-50">
+    <section className="py-0 px-0 sm:px-10 lg:px-40 sm:py-0 sm:pt-16 py-16 sm:pb-16 bg-gray-50">
       {/* HEADING */}
       <div className="text-center mb-12 px-4">
         <div className="text-3xl sm:text-4xl md:text-5xl font-medium">

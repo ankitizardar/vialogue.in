@@ -7,7 +7,7 @@ interface Props {
 
 const FeatureTableSection: React.FC<Props> = ({ data }) => {
   return (
-    <section className="w-full bg-white py-16 px-4 md:px-40">
+    <section className="w-full bg-white py-16 px-4 sm:px-10 lg:px-40">
       <div className="mx-auto">
 
         {/* HEADING */}

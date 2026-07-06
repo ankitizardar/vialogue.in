@@ -35,7 +35,7 @@ const API_One: React.FC = () => {
           </h1>
 
       {/* Content Section */}
-      <div className="grid px-0 sm:px-40 py-16 grid-cols-1 md:grid-cols-2 items-center">
+      <div className="grid px-0 sm:px-10 lg:px-40 py-16 grid-cols-1 md:grid-cols-2 items-center">
         {/* Image */}
         <div className="flex justify-space">
           <img

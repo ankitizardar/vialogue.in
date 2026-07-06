@@ -27,7 +27,7 @@ const LIRC: React.FC<API_OneProps> = ({ title, description, imageSrc, top_title,
   return (
     <div
       ref={ref}
-      className={`px-4 md:px-40 py-16 pt-4 sm:pt-16 sm:py-16 transition-all duration-700 ${
+      className={`px-4 sm:px-10 lg:px-40 py-16 pt-4 sm:pt-16 sm:py-16 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >

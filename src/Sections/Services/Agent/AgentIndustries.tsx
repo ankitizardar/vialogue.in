@@ -90,7 +90,7 @@ const AgentIndustries: React.FC = () => {
   };
 
   return (
-    <section className="py-24 px-6 md:px-40 bg-white text-left relative z-10">
+    <section className="py-24 px-6 sm:px-10 lg:px-40 bg-white text-left relative z-10">
       <div className="container mx-auto max-w-7xl">
         
         {/* Title block */}

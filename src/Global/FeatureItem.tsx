@@ -76,7 +76,7 @@ const AnimatedFeatureGrid: React.FC<Props> = ({
       : "md:grid-cols-3";
 
   return (
-    <section className="px-4 bg-[#FDF7FF] md:px-40 py-24 relative z-10">
+    <section className="px-4 bg-[#FDF7FF] sm:px-10 lg:px-40 py-24 relative z-10">
       <div className="container mx-auto max-w-7xl">
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-16">

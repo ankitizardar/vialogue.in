@@ -67,7 +67,7 @@ const GlobalOverview: React.FC<Props> = ({ data, rev }) => {
   }, [rev]);
 
   return (
-    <section ref={sectionRef} className="w-full py-16 px-4 md:px-40">
+    <section ref={sectionRef} className="w-full py-16 px-4 sm:px-10 lg:px-40">
       <div className="mx-auto">
 
         {/* BADGE */}

@@ -33,7 +33,7 @@ const FeaturesHero: React.FC = () => {
       </div> */}
 
       {/* Two-column layout */}
-      <div className="grid px-4 md:px-40 py-10 sm:py-30 grid-cols-1 md:grid-cols-2 gap-12 bg-[-1000%] bg-purple-100 items-center sm:bg-right bg-no-repeat bg-cover h-full" style={{backgroundImage: "url(/services/sms/sj.png)"}}>
+      <div className="grid px-4 sm:px-10 lg:px-40 py-10 sm:py-30 grid-cols-1 md:grid-cols-2 gap-12 bg-[-1000%] bg-purple-100 items-center sm:bg-right bg-no-repeat bg-cover h-full" style={{backgroundImage: "url(/services/sms/sj.png)"}}>
         {/* Left text */}
         <div className="max-w-2xl backdrop-blur-md rounded-2xl">
           <h1 className="text-xl md:text-2xl heading-two md:text-4xl font-medium mx-auto mb-10 leading-tight">

@@ -22,7 +22,6 @@ export default function Home() {
           name="description" 
           content="Power your enterprise communication with Vialogue. Unified REST API for SMS, WhatsApp Business, RCS messaging, verification OTPs, and intelligent AI chatbots at scale." 
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

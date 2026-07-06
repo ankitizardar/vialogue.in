@@ -7,7 +7,7 @@ const LSIRCC = () => {
   const [active, setActive] = useState<number>(0);
 
   return (
-    <section className="w-full bg-white py-16 px-4 md:px-40">
+    <section className="w-full bg-white py-16 px-4 sm:px-10 lg:px-40">
       <h2 className="text-3xl heading-two md:text-4xl font-medium text-center mb-10">
         Use Cases That Perform Better on RCS
       </h2>

@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 
 const SMSPreviewUI: React.FC = () => {
   return (
-    <div className="relative w-full h-[400px] flex items-center justify-center font-sans mt-0 lg:-mt-10 translate-x-2 lg:translate-x-10">
+    <div className="relative w-full h-[400px] flex items-center justify-center font-sans mt-0 lg:-mt-10">
+      <div className="relative w-[580px] h-full flex items-center justify-center scale-[0.75] xs:scale-[0.80] sm:scale-[0.85] md:scale-95 lg:scale-100 origin-center translate-x-2 lg:translate-x-10">
 
       {/* Back Card: Secure & Scalable Messaging */}
       <motion.div
@@ -106,6 +107,7 @@ const SMSPreviewUI: React.FC = () => {
         </div>
 
       </motion.div>
+      </div>
     </div>
   );
 };

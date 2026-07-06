@@ -26,7 +26,7 @@ const values = [
 const Flow: React.FC = () => {
   return (
     <section className="w-full py-12 md:py-16">
-      <div className="mx-auto px-10 sm:px-40">
+      <div className="mx-auto px-10 sm:px-10 lg:px-40">
         {/* Title */}
         <h2 className="text-center font-medium text-black mb-16 heading-two">
           Primary Value Statement

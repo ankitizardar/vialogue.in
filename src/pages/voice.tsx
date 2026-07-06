@@ -96,8 +96,13 @@ const VoiceCallSimulator: React.FC = () => {
   const [callState, setCallState] = useState<"ringing" | "talking" | "confirmed" | "declined">("ringing");
   const [timer, setTimer] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
-  
+  const [clockTime, setClockTime] = useState("");
+
   const fullTranscript = "Hello! Your package is arriving in 15 minutes. Press 1 to confirm, or 2 to reschedule.";
+
+  useEffect(() => {
+    setClockTime(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+  }, []);
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -142,7 +147,7 @@ const VoiceCallSimulator: React.FC = () => {
       <div className="relative bg-slate-950 rounded-[24px] overflow-hidden border border-slate-800/80 flex flex-col min-h-[380px]">
         {/* Device Status Bar */}
         <div className="flex justify-between items-center px-5 py-3 text-slate-400 text-xs font-semibold select-none border-b border-slate-900/50">
-          <span>{new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+          <span>{clockTime}</span>
           <div className="w-16 h-4 bg-slate-900 rounded-full flex items-center justify-center border border-slate-850">
             <span className="w-1.5 h-1.5 rounded-full bg-slate-800 mr-1" />
             <span className="w-1 h-1 rounded-full bg-slate-800" />
@@ -396,7 +401,7 @@ export default function Voice() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="px-4 md:px-40 py-20 max-w-7xl mx-auto"
+          className="px-4 sm:px-10 lg:px-40 py-20 max-w-7xl mx-auto"
         >
           {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-16">

@@ -14,7 +14,7 @@ interface StatsSectionProps {
 
 const StatsSection: React.FC<StatsSectionProps> = ({ data }) => {
   return (
-    <section className="w-full py-16 py-0 px-4 sm:px-40 bg-gray-50">
+    <section className="w-full py-16 py-0 px-4 sm:px-10 lg:px-40 bg-gray-50">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {data.map((item, index) => {
           const Icon = item.icon;

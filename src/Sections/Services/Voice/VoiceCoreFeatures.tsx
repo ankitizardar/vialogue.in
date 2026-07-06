@@ -109,7 +109,7 @@ const card = {
 
 const VoiceCoreFeatures = () => {
   return (
-    <section className="py-24 px-6 md:px-40 bg-white text-left relative z-10">
+    <section className="py-24 px-6 sm:px-10 lg:px-40 bg-white text-left relative z-10">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-brand-purple/10 border border-brand-purple/20">

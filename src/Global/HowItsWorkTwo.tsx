@@ -17,7 +17,7 @@ interface HowItWorksProps {
 const HowItWorksTwo: React.FC<HowItWorksProps> = ({ heading, steps }) => {
   return (
     <section className="w-full sm:mb-0 mb-0 py-16 bg-gray-50">
-      <div className="mx-auto px-4 sm:px-40">
+      <div className="mx-auto px-4 sm:px-10 lg:px-40">
         {/* Heading */}
         <h2 className="text-center heading-two text-2xl md:text-4xl font-medium text-gray-800 mb-12">
           {heading}

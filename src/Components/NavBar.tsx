@@ -202,7 +202,7 @@ const NavBar = () => {
     <>
       {/* NAVBAR */}
 
-      <div className="fixed border-b border-slate-200/60 bg-white/75 backdrop-blur-md top-0 left-0 w-[100vw] px-0 lg:px-40 py-0 z-[10000] transition-all duration-300">
+      <div className="fixed border-b border-slate-200/60 bg-white/75 backdrop-blur-md top-0 left-0 w-full px-0 lg:px-40 py-0 z-[10000] transition-all duration-300">
         <nav className="h-[90px] flex justify-between items-center px-4 lg:px-0">
           {/* LOGO */}
 

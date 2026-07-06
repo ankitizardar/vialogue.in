@@ -102,7 +102,7 @@ const ProductImage = () => {
   }
 
   return (
-    <section className="w-full z-10 relative flex justify-center mt-[-120px] md:mt-[-200px] py-16 md:py-20 px-4 md:px-40">
+    <section className="w-full z-10 relative flex justify-center mt-[-120px] md:mt-[-200px] py-16 md:py-20 px-4 sm:px-10 lg:px-40">
 
       <div
         ref={wrapperRef}

@@ -46,7 +46,7 @@ interface ReadySectionProps {
 const ReadySection: React.FC<ReadySectionProps> = ({ heading = "Ready to Start a Better Conversation?", paragraph = "Your customers are waiting. Build, innovate, and grow with the CPaaS platform designed for results.", btn1 = "Book a Demo", btn2 = "Talk to Our Voice Expert" }) => {
   const route = useRouter();
   return (
-    <section className="px-4 md:px-40 py-4 sm:py-16">
+    <section className="px-4 sm:px-10 lg:px-40 py-4 sm:py-16">
       <motion.div
         variants={container}
         initial="hidden"
