@@ -203,7 +203,7 @@ export default function ContactUs() {
 
             {/* RIGHT FORM */}
             <div className="md:col-span-3 p-6 sm:p-12">
-              <form onSubmit={formik.handleSubmit} className="space-y-8">
+              <form onSubmit={formik.handleSubmit} className="space-y-8 flex flex-col items-stretch w-full">
                 {/* Name */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
                   <Input
