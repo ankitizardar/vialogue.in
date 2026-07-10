@@ -205,7 +205,7 @@ export default function ContactUs() {
             <div className="md:col-span-3 p-6 sm:p-12">
               <form onSubmit={formik.handleSubmit} className="space-y-8">
                 {/* Name */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
                   <Input
                     label="First Name"
                     name="firstName"
@@ -227,7 +227,7 @@ export default function ContactUs() {
                 </div>
 
                 {/* Contact */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
                   <Input
                     label="Email"
                     type="email"
@@ -251,7 +251,7 @@ export default function ContactUs() {
                 </div>
 
                 {/* Message */}
-                <div className="pt-2">
+                <div className="pt-2 w-full">
                   <label className={`block text-sm font-medium mb-2 transition-colors ${
                     formik.touched.message && formik.errors.message ? "text-red-500" : "text-slate-700"
                   }`}>
@@ -278,7 +278,7 @@ export default function ContactUs() {
                 </div>
 
                 {/* Terms & Conditions */}
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 w-full">
                   <div className="flex items-start gap-3 text-sm text-slate-600">
                     <input
                       type="checkbox"
@@ -346,7 +346,7 @@ export default function ContactUs() {
                 )}
 
                 {/* Button */}
-                <div className="flex justify-end pt-4">
+                <div className="flex justify-end pt-4 w-full">
                   <button
                     type="submit"
                     disabled={status.type === "loading"}
@@ -382,7 +382,7 @@ function Input({
 }: InputProps) {
   return (
     <div className="relative group mt-4 flex flex-col w-full">
-      <div className="relative">
+      <div className="relative w-full">
         <input
           type={type}
           placeholder=" "
