@@ -228,7 +228,7 @@ const IntegrationsOverview: React.FC = () => {
                 </div>
               </div>
 
-              <div className="hidden sm:block relative w-full aspect-[4/3] max-w-[440px] mx-auto select-none">
+              <div className="relative w-full aspect-[4/3] max-w-[440px] mx-auto select-none scale-[0.75] min-[360px]:scale-[0.82] min-[400px]:scale-[0.9] sm:scale-100 origin-center">
                 <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full pointer-events-none z-0">
                   <defs>
                     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
@@ -295,6 +295,7 @@ const IntegrationsOverview: React.FC = () => {
                       key={item.id}
                       onMouseEnter={() => setActiveIntegration(item.id)}
                       onFocus={() => setActiveIntegration(item.id)}
+                      onClick={() => setActiveIntegration(item.id)}
                       className="absolute z-10 focus:outline-none transition-all duration-300 cursor-pointer"
                       style={{
                         left: `${item.coords.x}%`,
@@ -328,31 +329,7 @@ const IntegrationsOverview: React.FC = () => {
                 })}
               </div>
 
-              <div className="block sm:hidden space-y-4">
-                <div className="flex items-center justify-between gap-3 py-2 px-3 bg-white rounded-2xl border border-slate-150 shadow-sm">
-                  <div className="bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-1 flex items-center justify-center h-8 flex-shrink-0">
-                    <Image src="/imgs/logo2.svg" alt="Vialogue" width={60} height={20} className="object-contain" />
-                  </div>
-                  <span className="text-slate-400 font-light text-sm">↔</span>
-                  <div className="flex gap-2.5 overflow-x-auto py-1 no-scrollbar items-center">
-                    {integrations.map((item) => {
-                      const isActive = activeIntegration === item.id;
-                      const Logo = item.logo;
-                      return (
-                        <button
-                          key={item.id}
-                          onClick={() => setActiveIntegration(item.id)}
-                          className={`p-1 rounded-full transition-all flex-shrink-0 ${
-                            isActive ? "bg-slate-100 ring-2 ring-indigo-500" : "bg-white"
-                          }`}
-                        >
-                          <Logo />
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
+              {/* Fallback space-y block removed as the interactive dashboard is now enabled on mobile */}
 
               <div className="bg-white rounded-2xl p-5 border border-slate-150 shadow-sm relative min-h-[145px] flex flex-col justify-between transition-all duration-300">
                 <div className="space-y-2 text-left">

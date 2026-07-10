@@ -52,7 +52,7 @@ const ReadySection: React.FC<ReadySectionProps> = ({ heading = "Ready to Start a
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="rounded-0 sm:rounded-3xl px-4 py-14 sm:px-16 sm:py-16 text-center bg-gradient-to-br from-[#7C3AED] to-[#F9A8D4] relative overflow-hidden shadow-xl"
+        className="rounded-3xl px-4 py-14 sm:px-16 sm:py-16 text-center bg-gradient-to-br from-[#7C3AED] to-[#F9A8D4] relative overflow-hidden shadow-xl"
       >
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-white/20 blur-[80px] pointer-events-none" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-white/20 blur-[80px] pointer-events-none" />

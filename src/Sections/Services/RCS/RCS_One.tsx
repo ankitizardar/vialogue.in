@@ -45,7 +45,8 @@ const RCS_One: React.FC = () => {
           </div>
 
           {/* Right Side UI Comparison */}
-          <div className="relative w-full max-w-[550px] h-[550px] mx-auto flex items-center justify-center">
+          <div className="relative w-full h-[300px] min-[360px]:h-[340px] min-[400px]:h-[385px] min-[480px]:h-[440px] sm:h-[495px] md:h-[550px] mx-auto flex items-center justify-center overflow-hidden">
+            <div className="relative w-[550px] h-[550px] flex items-center justify-center scale-[0.54] min-[360px]:scale-[0.62] min-[400px]:scale-[0.7] min-[480px]:scale-[0.8] sm:scale-[0.9] md:scale-100 origin-center flex-shrink-0">
             
             {/* SVG Connection Arrow */}
             <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" viewBox="0 0 550 550" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,6 +140,7 @@ const RCS_One: React.FC = () => {
 
             {/* Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-purple-400/20 blur-[80px] rounded-full pointer-events-none -z-10"></div>
+            </div>
           </div>
 
         </div>
