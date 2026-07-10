@@ -346,7 +346,7 @@ export default function ContactUs() {
                 )}
 
                 {/* Button */}
-                <div className="flex justify-end pt-4 w-full">
+                <div className="pt-4 w-full md:flex md:justify-end">
                   <button
                     type="submit"
                     disabled={status.type === "loading"}
