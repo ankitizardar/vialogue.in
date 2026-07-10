@@ -140,7 +140,7 @@ export default function ContactUs() {
           <div className="grid md:grid-cols-5">
 
             {/* LEFT PANEL */}
-            <div className="md:col-span-2 relative bg-[#7C3AED] p-8 sm:p-12 text-white h-full flex flex-col justify-between overflow-hidden">
+            <div className="md:col-span-2 relative bg-[#7C3AED] p-6 sm:p-12 text-white h-full flex flex-col justify-between overflow-hidden">
               {/* Background elements */}
               <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-white/10 blur-[80px] pointer-events-none" />
               <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-white/20 blur-[80px] pointer-events-none" />
@@ -202,7 +202,7 @@ export default function ContactUs() {
             </div>
 
             {/* RIGHT FORM */}
-            <div className="md:col-span-3 p-8 sm:p-12">
+            <div className="md:col-span-3 p-6 sm:p-12">
               <form onSubmit={formik.handleSubmit} className="space-y-8">
                 {/* Name */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -312,17 +312,19 @@ export default function ContactUs() {
                 </div>
 
                 {/* Google reCAPTCHA */}
-                <div className="pt-2 flex flex-col items-start">
-                  <ReCAPTCHA
-                    ref={recaptchaRef}
-                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
-                    onChange={(value) => {
-                      formik.setFieldValue("recaptchaToken", value || "");
-                    }}
-                    onExpired={() => {
-                      formik.setFieldValue("recaptchaToken", "");
-                    }}
-                  />
+                <div className="pt-2 flex flex-col items-start w-full overflow-hidden">
+                  <div className="origin-left scale-[0.8] min-[360px]:scale-[0.88] min-[400px]:scale-100">
+                    <ReCAPTCHA
+                      ref={recaptchaRef}
+                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                      onChange={(value) => {
+                        formik.setFieldValue("recaptchaToken", value || "");
+                      }}
+                      onExpired={() => {
+                        formik.setFieldValue("recaptchaToken", "");
+                      }}
+                    />
+                  </div>
                   {formik.touched.recaptchaToken && formik.errors.recaptchaToken && (
                     <span className="text-xs text-red-500 mt-1 font-light">
                       {formik.errors.recaptchaToken}

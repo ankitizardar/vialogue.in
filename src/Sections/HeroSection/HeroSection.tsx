@@ -332,56 +332,57 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.95, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="hidden lg:flex lg:col-span-5 relative w-full max-w-[540px] mx-auto lg:ml-auto lg:mr-0 lg:translate-x-8 flex-col"
+            className="flex lg:col-span-5 relative w-full max-w-[540px] mx-auto lg:ml-auto lg:mr-0 lg:translate-x-8 flex-col mt-10 lg:mt-0 h-[415px] min-[360px]:h-[460px] min-[400px]:h-[505px] sm:h-[570px] lg:h-auto"
           >
-            {/* Router Active Badge */}
-            <div className="absolute top-16 -right-4 bg-white border border-slate-200/80 px-4 py-2 rounded-2xl flex items-center gap-2 text-xs font-semibold text-slate-800 shadow-[0_4px_12px_rgba(0,0,0,0.04)] z-20 select-none">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Router Active</span>
-            </div>
-
-            {/* Uptime Badge */}
-            <div className="absolute -bottom-4 -left-4 bg-white border border-slate-200/80 px-4 py-2 rounded-2xl flex items-center gap-2 text-xs font-semibold text-brand-purple shadow-[0_4px_12px_rgba(0,0,0,0.04)] z-20 select-none">
-              <span>Uptime 99.9%</span>
-            </div>
-
-            {/* Floating pill Tab Switcher */}
-            <div className="flex justify-center mb-6">
-              <div className="inline-flex bg-white/95 backdrop-blur border border-slate-200/60 p-1 rounded-2xl shadow-[0_10px_25px_-5px_rgba(15,23,42,0.05)] text-[11px] font-bold z-20 select-none">
-                <button
-                  onClick={() => handleTabClick("whatsapp")}
-                  className={`px-4 py-2 rounded-xl text-center transition-all cursor-pointer flex items-center gap-1.5 ${activeChannel === "whatsapp"
-                    ? "bg-emerald-600 text-white shadow-sm shadow-emerald-200/60"
-                    : "text-slate-500 hover:text-slate-800"
-                    }`}
-                >
-                  <MessageCircle size={14} />
-                  WhatsApp
-                </button>
-                <button
-                  onClick={() => handleTabClick("sms")}
-                  className={`px-4 py-2 rounded-xl text-center transition-all cursor-pointer flex items-center gap-1.5 ${activeChannel === "sms"
-                    ? "bg-purple-600 text-white shadow-sm shadow-purple-200/60"
-                    : "text-slate-500 hover:text-slate-800"
-                    }`}
-                >
-                  <MessageSquare size={14} />
-                  SMS
-                </button>
-                <button
-                  onClick={() => handleTabClick("rcs")}
-                  className={`px-4 py-2 rounded-xl text-center transition-all cursor-pointer flex items-center gap-1.5 ${activeChannel === "rcs"
-                    ? "bg-blue-600 text-white shadow-sm shadow-blue-200/60"
-                    : "text-slate-500 hover:text-slate-800"
-                    }`}
-                >
-                  <Send size={14} />
-                  RCS
-                </button>
+            <div className="relative w-full max-w-[380px] mx-auto flex flex-col scale-[0.72] min-[360px]:scale-[0.8] min-[400px]:scale-[0.88] sm:scale-100 origin-center">
+              {/* Router Active Badge */}
+              <div className="absolute top-[80px] -right-4 bg-white border border-slate-200/80 px-4 py-2 rounded-2xl flex items-center gap-2 text-xs font-semibold text-slate-800 shadow-[0_4px_12px_rgba(0,0,0,0.04)] z-20 select-none">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>Router Active</span>
               </div>
-            </div>
-            {/* Elegant Chat Window Card */}
-            <div className="relative mx-auto w-full max-w-[380px] h-[500px] bg-white border border-slate-200/80 rounded-3xl shadow-[0_25px_60px_-15px_rgba(124,58,237,0.06)] overflow-hidden flex flex-col select-none">
+
+              {/* Uptime Badge */}
+              <div className="absolute -bottom-4 -left-4 bg-white border border-slate-200/80 px-4 py-2 rounded-2xl flex items-center gap-2 text-xs font-semibold text-brand-purple shadow-[0_4px_12px_rgba(0,0,0,0.04)] z-20 select-none">
+                <span>Uptime 99.9%</span>
+              </div>
+
+              {/* Floating pill Tab Switcher */}
+              <div className="flex justify-center mb-6">
+                <div className="inline-flex bg-white/95 backdrop-blur border border-slate-200/60 p-1 rounded-2xl shadow-[0_10px_25px_-5px_rgba(15,23,42,0.05)] text-[11px] font-bold z-20 select-none">
+                  <button
+                    onClick={() => handleTabClick("whatsapp")}
+                    className={`px-4 py-2 rounded-xl text-center transition-all cursor-pointer flex items-center gap-1.5 ${activeChannel === "whatsapp"
+                      ? "bg-emerald-600 text-white shadow-sm shadow-emerald-200/60"
+                      : "text-slate-500 hover:text-slate-800"
+                      }`}
+                  >
+                    <MessageCircle size={14} />
+                    WhatsApp
+                  </button>
+                  <button
+                    onClick={() => handleTabClick("sms")}
+                    className={`px-4 py-2 rounded-xl text-center transition-all cursor-pointer flex items-center gap-1.5 ${activeChannel === "sms"
+                      ? "bg-purple-600 text-white shadow-sm shadow-purple-200/60"
+                      : "text-slate-500 hover:text-slate-800"
+                      }`}
+                  >
+                    <MessageSquare size={14} />
+                    SMS
+                  </button>
+                  <button
+                    onClick={() => handleTabClick("rcs")}
+                    className={`px-4 py-2 rounded-xl text-center transition-all cursor-pointer flex items-center gap-1.5 ${activeChannel === "rcs"
+                      ? "bg-blue-600 text-white shadow-sm shadow-blue-200/60"
+                      : "text-slate-500 hover:text-slate-800"
+                      }`}
+                  >
+                    <Send size={14} />
+                    RCS
+                  </button>
+                </div>
+              </div>
+              {/* Elegant Chat Window Card */}
+              <div className="relative mx-auto w-full h-[500px] bg-white border border-slate-200/80 rounded-3xl shadow-[0_25px_60px_-15px_rgba(124,58,237,0.06)] overflow-hidden flex flex-col select-none">
 
               <div className="flex-1 flex flex-col relative overflow-hidden bg-slate-50">
                 <AnimatePresence mode="wait">
@@ -677,7 +678,8 @@ export default function HeroSection() {
                 </AnimatePresence>
               </div>
             </div>
-          </motion.div>
+          </div>
+        </motion.div>
 
         </div>
       </div>

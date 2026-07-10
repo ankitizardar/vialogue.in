@@ -35,7 +35,7 @@ const steps = [
 
 export default function EngineeringGrowthAbsolute() {
   return (
-    <section className="relative mb-65 sm:mb-0 bg-white py-16 px-4 sm:px-10 lg:px-40 h-[680px] sm:h-[680px]">
+    <section className="relative mb-0 bg-white py-16 px-4 sm:px-10 lg:px-40 h-auto lg:h-[680px]">
       <div className="max-w-7xl mx-auto relative">
 
         {/* ================= TOP CONTENT ================= */}

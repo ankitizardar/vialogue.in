@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const RCSPreviewUI: React.FC = () => {
   return (
-    <div className="relative w-full h-[460px] flex items-center justify-center font-sans mt-0">
-      <div className="relative w-[610px] h-full flex items-center justify-center scale-[0.75] xs:scale-[0.80] sm:scale-[0.85] md:scale-95 lg:scale-100 origin-center">
+    <div className="relative w-full h-[260px] min-[360px]:h-[290px] min-[400px]:h-[330px] min-[480px]:h-[360px] sm:h-[410px] md:h-[460px] flex items-center justify-center font-sans mt-0">
+      <div className="relative w-[610px] h-full flex items-center justify-center scale-[0.5] min-[360px]:scale-[0.57] min-[400px]:scale-[0.65] min-[480px]:scale-[0.75] sm:scale-[0.85] md:scale-95 lg:scale-100 origin-center">
 
         {/* Back Card: API Infrastructure */}
         <motion.div
