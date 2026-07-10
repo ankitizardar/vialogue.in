@@ -64,10 +64,10 @@ const RCSAPI: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className="flex flex-col items-center text-center relative z-10"
+                  className="flex flex-col items-center text-center bg-slate-50 border border-slate-100 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow relative z-10"
                 >
-                  <div className={`w-20 h-20 ${item.bgColor} rounded-2xl flex items-center justify-center mb-8 shadow-sm`}>
-                    <Icon size={32} className={item.color} />
+                  <div className={`w-16 h-16 sm:w-20 sm:h-20 ${item.bgColor} rounded-2xl flex items-center justify-center mb-6 sm:mb-8 shadow-sm`}>
+                    <Icon size={28} className={item.color} />
                   </div>
                   <h3 className="text-[17px] font-bold text-slate-800 mb-3">
                     {item.title}

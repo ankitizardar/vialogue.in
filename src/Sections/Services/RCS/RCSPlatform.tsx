@@ -9,7 +9,7 @@ const RCSPlatform: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         
         {/* Custom UI: Unified Platform Infrastructure */}
-        <div className="relative w-full h-[450px] bg-slate-50 rounded-[32px] border border-slate-200 shadow-lg flex flex-col items-center justify-center p-8 overflow-hidden group">
+        <div className="relative w-full h-[495px] sm:h-[450px] bg-slate-50 rounded-[32px] border border-slate-200 shadow-lg flex flex-col items-center justify-center p-6 sm:p-8 overflow-hidden group">
            <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-blue-100/60 to-transparent"></div>
            
            <h3 className="absolute top-6 left-6 text-sm font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2">
@@ -43,23 +43,23 @@ const RCSPlatform: React.FC = () => {
            </div>
 
            {/* Metrics/Status */}
-           <div className="flex gap-4 w-full relative z-10 mt-8">
-              <div className="flex-1 bg-white p-4 rounded-2xl border border-slate-100 shadow-md flex items-center gap-4 hover:-translate-y-1 transition-transform">
+           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full relative z-10 mt-6 sm:mt-8">
+              <div className="flex-1 bg-white p-3 sm:p-4 rounded-2xl border border-slate-100 shadow-md flex items-center gap-3 sm:gap-4 hover:-translate-y-1 transition-transform">
                  <div className="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center">
                     <CheckCircle2 size={20} className="text-emerald-500" />
                  </div>
                  <div>
                     <div className="text-xs text-slate-500 font-bold uppercase tracking-wide">Uptime</div>
-                    <div className="text-lg font-black text-slate-800">99.99%</div>
+                    <div className="text-base sm:text-lg font-black text-slate-800">99.99%</div>
                  </div>
               </div>
-              <div className="flex-1 bg-white p-4 rounded-2xl border border-slate-100 shadow-md flex items-center gap-4 hover:-translate-y-1 transition-transform">
+              <div className="flex-1 bg-white p-3 sm:p-4 rounded-2xl border border-slate-100 shadow-md flex items-center gap-3 sm:gap-4 hover:-translate-y-1 transition-transform">
                  <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
                     <Zap size={20} className="text-blue-500" />
                  </div>
                  <div>
                     <div className="text-xs text-slate-500 font-bold uppercase tracking-wide">Latency</div>
-                    <div className="text-lg font-black text-slate-800">&lt;50ms</div>
+                    <div className="text-base sm:text-lg font-black text-slate-800">&lt;50ms</div>
                  </div>
               </div>
            </div>

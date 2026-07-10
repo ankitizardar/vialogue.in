@@ -121,7 +121,7 @@ const VoiceHIW: React.FC = () => {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className={`${i % 2 === 1 ? "bg-gray-100 flex items-start gap-4 px-4 py-4" : "bg-white flex items-start gap-4 px-4 py-0"}`}
+            className="bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-4 px-5 py-5 shadow-sm"
           >
             <motion.div
               animate={{ y: [0, -6, 0] }}
@@ -132,8 +132,8 @@ const VoiceHIW: React.FC = () => {
             </motion.div>
 
             <div>
-              <h2 className="text-lg text-left font-medium">{step.title}</h2>
-              <p className="text-sm text-left text-gray-600 mt-1">{step.desc}</p>
+              <h2 className="text-lg text-left font-bold text-slate-800">{step.title}</h2>
+              <p className="text-sm text-left text-slate-500 mt-1 leading-relaxed">{step.desc}</p>
             </div>
           </motion.div>
         ))}
