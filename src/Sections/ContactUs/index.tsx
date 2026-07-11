@@ -264,8 +264,8 @@ export default function ContactUs() {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     className={`w-full border-b bg-transparent outline-none py-2 text-slate-800 placeholder-slate-400 transition-colors resize-none ${formik.touched.message && formik.errors.message
-                        ? "border-red-500 focus:border-red-500"
-                        : "border-slate-300 focus:border-[#7C3AED]"
+                      ? "border-red-500 focus:border-red-500"
+                      : "border-slate-300 focus:border-[#7C3AED]"
                       }`}
                   />
                   {formik.touched.message && formik.errors.message && (
@@ -310,8 +310,8 @@ export default function ContactUs() {
                 </div>
 
                 {/* Google reCAPTCHA */}
-                <div className="pt-2 flex flex-col items-start w-full">
-                  <div className="origin-left scale-[0.8] min-[360px]:scale-[0.88] min-[400px]:scale-100">
+                <div className="pt-2 flex flex-col items-center min-[400px]:items-start w-full">
+                  <div className="origin-top-left scale-[0.8] w-[243.2px] h-[62.4px] min-[360px]:scale-[0.88] min-[360px]:w-[267.5px] min-[360px]:h-[68.6px] min-[400px]:scale-100 min-[400px]:w-[304px] min-[400px]:h-[78px]">
                     <ReCAPTCHA
                       ref={recaptchaRef}
                       sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
@@ -351,7 +351,7 @@ export default function ContactUs() {
                     className="relative overflow-hidden group w-full md:w-auto px-8 py-3.5 rounded-xl bg-[#7C3AED] text-white font-medium hover:bg-[#6D28D9] transition-all active:scale-[0.98] shadow-lg shadow-[#7C3AED]/20 disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
                   >
                     <span className="relative z-10">
-                      {status.type === "loading" ? "Sending..." : "send request"}
+                      {status.type === "loading" ? "Sending..." : "Send request"}
                     </span>
                   </button>
                 </div>
@@ -389,8 +389,8 @@ function Input({
           {...props}
         />
         <label className={`absolute left-0 top-2 text-sm cursor-text transition-all peer-focus:-top-5 peer-focus:text-xs peer-focus:font-medium peer-not-placeholder-shown:-top-5 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:font-medium ${touched && error
-            ? "text-red-500 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500"
-            : "text-slate-500 peer-focus:text-[#7C3AED] peer-not-placeholder-shown:text-[#7C3AED]"
+          ? "text-red-500 peer-focus:text-red-500 peer-not-placeholder-shown:text-red-500"
+          : "text-slate-500 peer-focus:text-[#7C3AED] peer-not-placeholder-shown:text-[#7C3AED]"
           }`}>
           {label}
         </label>

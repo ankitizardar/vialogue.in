@@ -62,6 +62,11 @@ export default function ClientLogos() {
         .animate-marquee {
           animation: marquee 25s linear infinite;
         }
+        @media (max-width: 768px) {
+          .animate-marquee {
+            animation-duration: 15s;
+          }
+        }
         .animate-marquee:hover {
           animation-play-state: paused;
         }
