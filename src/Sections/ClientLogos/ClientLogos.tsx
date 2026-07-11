@@ -31,7 +31,7 @@ export default function ClientLogos() {
         <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-[#FFFFFF] to-transparent z-10 pointer-events-none" />
 
         {/* Scrolling Track */}
-        <div className="flex gap-8 animate-marquee whitespace-nowrap min-w-full">
+        <div className="flex gap-8 animate-marquee whitespace-nowrap min-w-full w-max">
           {scrollBrands.map((brand, i) => (
             <div
               key={i}

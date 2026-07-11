@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { MessageSquare, MessageCircle, Send, Key, Megaphone, Bot, Phone, Sparkles } from "lucide-react";
 
 const solutions = [
@@ -109,9 +110,10 @@ export default function ProductSolutions() {
           {solutions.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div
+              <Link
+                href={item.link}
                 key={idx}
-                className="group relative bg-white rounded-3xl p-8 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(124,58,237,0.1)] transition-all duration-300 flex flex-col items-center text-center border border-slate-100 overflow-hidden"
+                className="group relative bg-white rounded-3xl p-8 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(124,58,237,0.1)] transition-all duration-300 flex flex-col items-center text-center border border-slate-100 overflow-hidden cursor-pointer"
               >
                 {/* Hover Gradient Top Border */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#7C3AED] to-[#F9A8D4] opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
@@ -130,7 +132,7 @@ export default function ProductSolutions() {
                 <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-medium">
                   {item.description}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>
