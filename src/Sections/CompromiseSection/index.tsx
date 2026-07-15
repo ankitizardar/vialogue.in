@@ -45,7 +45,7 @@ const cards = [
     ],
   },
   {
-    title: "Botss for Enterprises",
+    title: "Bots for Enterprises",
     image: image4,
     points: [
       "Secure APIs for OTPs, voice & notifications",

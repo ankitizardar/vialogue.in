@@ -18,7 +18,7 @@ export const list: List[] = [
     img: "/services/sms/cwc/img2.jpg",
   },
   {
-    title: "Promotions & Marketing Botss",
+    title: "Promotions & Marketing Bots",
     description:
       "Send targeted marketing messages to engage and convert customers.",
     img: "/services/sms/cwc/img3.jpg",
@@ -426,7 +426,7 @@ export const voiceUseCasesData: voiceUseCaseItem[] = [
     img: "/services/voice/usecase2.png",
   },
   {
-    title: "Sales & Marketing Voice Botss",
+    title: "Sales & Marketing Voice Bots",
     description: "Run promotional voice campaigns, product announcements, and personalized offers to engage customers and drive Conversations through high-impact voice communication.",
     img: "/services/voice/usecase3.png",
   },

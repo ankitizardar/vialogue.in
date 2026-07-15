@@ -20,7 +20,7 @@ export const sms_list:CWCListProp[] = [
     img: "/services/sms/cwc/img3.jpg",
   },
   {
-    title: "Abandoned Cart Botss",
+    title: "Abandoned Cart Bots",
     description: "Recover lost sales by reminding customers of pending carts.",
     img: "/services/sms/cwc/img4.jpg",
   },
@@ -52,7 +52,7 @@ export const whatsapp_list:CWCListProp[] = [
     img: "/services/wapp/cwc/img2.png",
   },
   {
-    title: "Promotions & Marketing Botss",
+    title: "Promotions & Marketing Bots",
     description:
       "Run compliant WhatsApp campaigns for offers, product launches, festival announcements, and customer engagement updates.",
     img: "/services/wapp/cwc/img3.png",

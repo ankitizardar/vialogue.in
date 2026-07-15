@@ -15,7 +15,7 @@ const ButtonGlobal: React.FC<ButtonGlobalProps> = ({
 }) => {
   if (property) {
     return (
-      <Link href="/contact" className="w-full sm:w-auto sm:flex-1 flex">
+      <Link href="/contact" className="w-full sm:w-auto flex">
       <button
         onClick={onClick}
         className="
@@ -60,7 +60,7 @@ const ButtonGlobal: React.FC<ButtonGlobalProps> = ({
 
   /* SECONDARY BUTTON */
   return (
-    <Link href="/contact" className="w-full sm:w-auto sm:flex-1 flex">
+    <Link href="/contact" className="w-full sm:w-auto flex">
     <button
       onClick={onClick}
       className="

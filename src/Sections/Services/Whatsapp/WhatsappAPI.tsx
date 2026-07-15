@@ -1,87 +1,144 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, cubicBezier } from "framer-motion";
 import { Cloud, Route, Network, Activity } from "lucide-react";
 
-const capabilities = [
+const steps = [
   {
-    title: "REST-Based SMS API",
-    description: "Secure REST APIs allow quick integration from any application or backend system.",
-    icon: Cloud,
-    color: "text-white",
-    bgColor: "bg-[#8B5CF6]", // Purple
+    title: "REST-Based WhatsApp API",
+    desc: "Integrate WhatsApp messaging into your apps with developer-friendly REST APIs.",
+    color: "bg-[#8C41F5]",
+    icon: <Cloud size={28} className="text-white" />,
   },
   {
-    title: "Smart SMS Gateway",
-    description: "Automatically validates sender IDs, templates, and routes messages.",
-    icon: Route,
-    color: "text-white",
-    bgColor: "bg-[#F97316]", // Orange
+    title: "Smart Template Router",
+    desc: "Validate templates, variables, and handle high-volume message delivery automatically.",
+    color: "bg-[#FFB26B]",
+    icon: <Route size={28} className="text-white" />,
   },
   {
-    title: "Optimized Delivery Network",
-    description: "Messages are delivered through high-quality routes for maximum success.",
-    icon: Network,
-    color: "text-white",
-    bgColor: "bg-[#FCA5A5]", // Pink/Red
+    title: "Official Meta Infrastructure",
+    desc: "Leverage official WhatsApp APIs and robust Meta endpoints for maximum deliverability.",
+    color: "bg-[#FFC0CB]",
+    icon: <Network size={28} className="text-white" />,
   },
   {
-    title: "Real-Time Status & Callbacks",
-    description: "Delivery reports and callbacks provide complete visibility into message status.",
-    icon: Activity,
-    color: "text-white",
-    bgColor: "bg-[#8B5CF6]", // Purple
+    title: "Real-Time Webhooks & Status",
+    desc: "Receive instant updates on message sent, delivered, read status, and user replies.",
+    color: "bg-[#7C3AED]",
+    icon: <Activity size={28} className="text-white" />,
   },
 ];
 
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, x: -80 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      ease: cubicBezier(0.25, 0.46, 0.45, 0.94),
+    },
+  },
+};
+
 const WhatsappAPI: React.FC = () => {
   return (
-    <section className="py-24 px-4 sm:px-6 md:px-20 lg:px-40 bg-white relative">
-      <div className="container mx-auto max-w-7xl">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-slate-800"
+    <div className="px-6 sm:px-10 lg:px-40 py-16 bg-white">
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: 0.4 }}
+        transition={{ duration: 0.6 }}
+        className="text-2xl heading-two md:text-4xl font-medium text-center mb-16 text-slate-800"
+      >
+        Advanced API Capabilities
+      </motion.h1>
+
+      {/* DESKTOP */}
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ amount: 0.3 }}
+        className="hidden md:flex items-start justify-between relative gap-10"
+      >
+        {/* Animated progress line */}
+        <motion.div
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ amount: 0.4 }}
+          transition={{ duration: 1 }}
+          style={{ transformOrigin: "left" }}
+          className="absolute top-8 left-0 right-0 h-[1px] border-t border-dashed border-gray-300"
+        />
+
+        {steps.map((step, i) => (
+          <motion.div
+            key={i}
+            variants={item}
+            className="flex flex-col items-center text-center w-1/4"
           >
-            Advanced API Capabilities
-          </motion.h2>
-        </div>
+            {/* Floating icon */}
+            <motion.div
+              animate={{
+                y: [0, -6, 0],
+                scale: [1, 1.05, 1],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 0.2,
+              }}
+              className={`${step.color} w-16 h-16 rounded-2xl mb-6 flex items-center justify-center`}
+            >
+              {step.icon}
+            </motion.div>
 
-        <div className="relative">
-          {/* Dotted Line Behind Icons */}
-          <div className="hidden lg:block absolute top-10 left-[10%] right-[10%] h-[1px] border-t border-dashed border-gray-300 z-0"></div>
+            <h2 className="text-lg font-bold mb-2 text-slate-800">{step.title}</h2>
+            <p className="text-sm text-gray-605 leading-5">{step.desc}</p>
+          </motion.div>
+        ))}
+      </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {capabilities.map((item, index) => {
-              const Icon = item.icon;
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className="flex flex-col items-center text-center bg-slate-50 border border-slate-100 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow relative z-10"
-                >
-                  <div className={`w-16 h-16 sm:w-20 sm:h-20 ${item.bgColor} rounded-2xl flex items-center justify-center mb-6 sm:mb-8 shadow-sm`}>
-                    <Icon size={28} className={item.color} />
-                  </div>
-                  <h3 className="text-[17px] font-bold text-slate-800 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-500 text-[14px] leading-relaxed max-w-[250px]">
-                    {item.description}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
+      {/* MOBILE */}
+      <div className="md:hidden flex flex-col gap-4">
+        {steps.map((step, i) => (
+          <motion.div
+            key={i}
+            initial={{ x: -60, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ amount: 0.4 }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            className="bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-4 px-5 py-5 shadow-sm"
+          >
+            <motion.div
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className={`${step.color} w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center`}
+            >
+              {step.icon}
+            </motion.div>
+
+            <div>
+              <h2 className="text-lg text-left font-bold text-slate-800">{step.title}</h2>
+              <p className="text-sm text-left text-slate-500 mt-1 leading-relaxed">{step.desc}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
