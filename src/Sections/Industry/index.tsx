@@ -20,7 +20,7 @@ interface IndustrySectionProps {
 }
 
 const data: Data[] = [
-  { value: "1479k", label: "Messages Delivered", c1: "#FFEEC0", c2: "#FFEEA9" },
+  { value: "10B+", label: "Messages Delivered", c1: "#FFEEC0", c2: "#FFEEA9" },
   { value: "1745+", label: "Enterprise Clients", c1: "#FFBEC1", c2: "#FFBEA9" },
   { value: "24x7", label: "Customer Support", c1: "#F5D6FD", c2: "#F5D6E4" },
   { value: "5000+", label: "Voice Calls / Year", c1: "#DACAFF", c2: "#DACAE7" },
