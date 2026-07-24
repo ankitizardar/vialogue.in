@@ -69,6 +69,15 @@ const Footer: React.FC = () => {
                   Haryana, India
                 </span>
               </div>
+              <div className="pt-3 flex justify-center sm:justify-start">
+                <Image 
+                  src="/imgs/meta-business-partner.svg" 
+                  alt="Meta Business Partner" 
+                  width={180} 
+                  height={76} 
+                  className="h-12 sm:h-14 w-auto object-contain"
+                />
+              </div>
             </div>
           </div>
           

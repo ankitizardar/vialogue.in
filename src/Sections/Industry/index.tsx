@@ -21,9 +21,9 @@ interface IndustrySectionProps {
 
 const data: Data[] = [
   { value: "10B+", label: "Messages Delivered", c1: "#FFEEC0", c2: "#FFEEA9" },
-  { value: "1745+", label: "Enterprise Clients", c1: "#FFBEC1", c2: "#FFBEA9" },
+  { value: "500+", label: "Enterprise Clients", c1: "#FFBEC1", c2: "#FFBEA9" },
   { value: "24x7", label: "Customer Support", c1: "#F5D6FD", c2: "#F5D6E4" },
-  { value: "5000+", label: "Voice Calls / Year", c1: "#DACAFF", c2: "#DACAE7" },
+  // { value: "5000+", label: "Voice Calls / Year", c1: "#DACAFF", c2: "#DACAE7" },
 ];
 
 /* =======================
@@ -143,7 +143,7 @@ const IndustrySection: React.FC<IndustrySectionProps> = ({ bgColor }) => {
       {/* ================= STATS GRID ================= */}
       <div
         ref={ref}
-        className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6"
       >
         {data.map((e, i) => (
           <motion.div
